@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <!-- <div class="bg"></div> -->
+    <div class="app-main">
+
+        <div class="searchInputBox">
+            <input type="text" autocomplete="on" class="input-box" id="input-box"
+                placeholder="Search for a location..." />
+            <div class="suggestions" id="sigs"></div>
+        </div>
+
+        <div class="image" id="img1">
+            <img src="cover.png">
+        </div>
+
+        <div class="weather-body" id="whb">
+            <div class="location-details">
+                <div class="city" id="city" align="center"></div>
+                <div class="date" id="date" align="center"></div>
+            </div>
+
+
+
+            <div class="weather-status">
+                <div class="temp" id="temp" align="center"></div>
+                <div class="min-max" id="min-max" align="center"></div>
+                <div class="weather" id="weather" align="center"></div>
+                <div class="img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btns" align="center">
+        <div class="convert_cel">
+            <button id="con_cel" onclick="convertIntoCel()">Convert from K to C</button>
+        </div>
+
+        <div class="convert_far">
+            <button id="con_far" onclick="convertIntoFar()">Convert from K to F</button>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
